@@ -45,7 +45,7 @@ notes-app/
 
 ## Live Demo
 
-🔗 [View Live Demo](https://your-project.vercel.app)
+🔗 [View Live Demo](https://notes-app-sepia-ten-92.vercel.app/)
 
 ---
 
