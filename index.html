@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Notes App</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-note-sticky"></i>
+      </div>
+
+      <div>
+        <h2>NotesFlow</h2>
+        <p>Creative Workspace</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+
+      <button class="menu-btn active">
+        <i class="fa-solid fa-layer-group"></i>
+        All Notes
+      </button>
+
+      <button class="menu-btn">
+        <i class="fa-solid fa-star"></i>
+        Favorites
+      </button>
+
+      <button class="menu-btn">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        Recent
+      </button>
+
+    </nav>
+
+    <div class="theme-switch">
+
+      <span>Appearance</span>
+
+      <button id="themeToggle">
+        <i class="fa-solid fa-sun"></i>
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <!-- Topbar -->
+    <header class="topbar">
+
+      <div>
+        <h1>Your Notes</h1>
+        <p id="dateText"></p>
+      </div>
+
+      <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search notes..."
+        />
+
+      </div>
+
+    </header>
+
+    <!-- Add Note -->
+    <section class="create-note">
+
+      <input
+        type="text"
+        id="noteTitle"
+        placeholder="Note title..."
+      />
+
+      <textarea
+        id="noteText"
+        placeholder="Write something amazing..."
+      ></textarea>
+
+      <div class="note-actions">
+
+        <div class="note-info">
+          <i class="fa-solid fa-pen"></i>
+          <span>Auto Saved</span>
+        </div>
+
+        <button id="addNoteBtn">
+          <i class="fa-solid fa-plus"></i>
+          Create Note
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- Notes -->
+    <section class="notes-grid" id="notesGrid">
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState">
+
+        <i class="fa-solid fa-book-open"></i>
+
+        <h2>No Notes Yet</h2>
+
+        <p>
+          Start creating your first beautiful note.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
