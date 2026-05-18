@@ -51,7 +51,7 @@ notes-app/
 
 ## GitHub Repository
 
-🔗 [GitHub Repository](https://github.com/yourusername/notes-app)
+🔗 [GitHub Repository](https://github.com/masifgpt/notes-app)
 
 ---
 
